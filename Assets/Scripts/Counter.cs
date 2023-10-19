@@ -17,6 +17,9 @@ public class Counter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(counterText.text != Collectable.totalCoins.ToString())
+        {
+            counterText.text = Collectable.totalCoins.ToString();
+        }
     }
 }
